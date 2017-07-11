@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PhoneBook</string>
+    <string name="action_settings">Settings</string>
+    <string name="edit_first_name">First Name</string>
+    <string name="edit_last_name">Last Name</string>
+    <string name="edit_phone_number">Phone Number</string>
+    <string name="edit_nick_name">Nick Name</string>
+    <string name="button_add">Add</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_update">Update</string>
+    <string name="empty_text">NO CONTACTS CREATED YET</string>
+    <string name="dialog_title">Delete Contact</string>
+    <string name="content">Contact will be deleted permanetly from app.</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">Disagree</string>
+    <string name="contents">Click on "Agree" and tap to "Delete" icon from list to delete a contact.</string>
+</resources>

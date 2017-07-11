@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    This vertical linear layout contains all the views in the AddTaskActivity code.
+    This includes an EditText to add a task description, and buttons to select a priority
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:focusableInTouchMode="true">
+
+        <!-- EditText for getting first name input -->
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:hint="@string/edit_first_name"
+            android:paddingBottom="@dimen/activity_horizontal_margin" />
+
+        <!-- EditText for getting first name input -->
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:hint="@string/edit_last_name"
+            android:paddingBottom="@dimen/activity_horizontal_margin" />
+
+        <!-- EditText for getting first name input -->
+        <EditText
+            android:id="@+id/editTextPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:hint="@string/edit_phone_number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:paddingBottom="@dimen/activity_horizontal_margin" />
+
+        <!-- EditText for getting first name input -->
+        <EditText
+            android:id="@+id/editTextNickName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:hint="@string/edit_nick_name"
+            android:paddingBottom="@dimen/activity_horizontal_margin" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <!-- Linear layout that contains all three priority buttons (high, medium, low)
+            in a single line -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/buttonP1"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_add"
+                    android:onClick="onUpdateContact"
+                    android:text="@string/button_update"
+                    android:textColor="@android:color/primary_text_light" />
+
+
+                <Button
+                    android:id="@+id/buttonP3"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_delete"
+                    android:onClick="onDeleteContact"
+                    android:text="@string/button_delete"
+                    android:textColor="@android:color/primary_text_light" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</ScrollView>
